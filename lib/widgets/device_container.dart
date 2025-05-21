@@ -56,9 +56,9 @@ class _DeviceContainerState extends State<DeviceContainer> {
           const SizedBox(height: 10,),
   Text(
             widget.model.subtitle,
-            style: const TextStyle(
+            style:  TextStyle(
               fontSize: 16,
-              color: Colors.black,
+              color: Colors.black.withOpacity(0.5),
               fontWeight: FontWeight.w400
             ),
           ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_radial_slider/widgets/device_container.dart';
 
+import '../widgets/room_container.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -157,6 +159,42 @@ List<DeviceContainerModel>deviceModel=[
 
                 ],
               ),
+              const SizedBox(height: 20),
+     Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        RoomContainer(
+          title: 'Living Room',
+          subtitle: '3 Devices',
+          iconPath: 'assets/home.png',
+          width: 180,
+        ),
+        RoomContainer(
+          title: 'Bedroom',
+          subtitle: '2 Devices',
+          iconPath: 'assets/fan.png',
+          width: 180,
+        ),
+      ],
+     )
+,
+  Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        RoomContainer(
+          title: 'Kids Room',
+          subtitle: '3 Devices',
+          iconPath: 'assets/home.png',
+          width: 180,
+        ),
+        RoomContainer(
+          title: 'Kitchen',
+          subtitle: '1 Device',
+          iconPath: 'assets/fan.png',
+          width: 180,
+        ),
+      ],
+     )
             ],
           ),
         ),
